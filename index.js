@@ -74,7 +74,12 @@ Person.prototype.toString = function () {
 */
 
 function Car(model, milesPerGallon) {
+  this.tank = 0;
+  this.odometer = 0;
+}
 
+Car.prototype.fill = function (gallons) {
+  this.tank += gallons;
 }
 
 /*
@@ -84,7 +89,7 @@ function Car(model, milesPerGallon) {
     - Besides the methods on Person.prototype, babies have the ability to `.play()`:
         + Should return a string "Playing with x", x being the favorite toy.
 */
-function Baby() {
+function Baby(name, age, favToy) {
 
 }
 
